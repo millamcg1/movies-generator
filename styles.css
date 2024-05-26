@@ -1,0 +1,111 @@
+/* Basic reset and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: "Ubuntu Sans", sans-serif;
+  background-color: #e2d8df;
+  text-align: center;
+  color: #44304b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container styles */
+.container {
+  background-color: #ded3d8;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Heading styles */
+.container h1, .container h2 {
+  margin-bottom: 20px;
+}
+
+/* Button styles */
+.styled-button {
+  background-color: #edd9e9;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  cursor: pointer;
+  font-family: "Ubuntu Sans", sans-serif;
+  font-size: 14px;
+  height: 36px;
+  line-height: 27px;
+  min-width: 70px;
+  padding: 0 16px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: pre;
+}
+
+
+.styled-button:hover {
+  border-color: #785f72;
+  box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+  color: #202124;
+}
+
+
+.styled-button:focus {
+  border-color: #aa8fa6;
+  outline: none;
+}
+
+.movie-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+
+.movie-container h2 {
+  font-size: 24px;
+  margin: 0;
+  color: #430a43;
+  font-family: "Montserrat", sans-serif;
+}
+
+.movie-container p {
+  font-size: 16px;
+  margin: 10px 0 0;
+  color: #561630;
+}
+
+.typing {
+  border-right: 2px solid #666;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 1s steps(10, end), blink-caret .40s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #666; }
+}
